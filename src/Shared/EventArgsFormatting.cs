@@ -273,6 +273,7 @@ namespace Microsoft.Build.Shared
                 }
             }
 
+            //only prints properties if necessary. otherwise output will be [filePath]
             if (projectFile != null && !String.Equals(projectFile, file))
             {
                 if(projectProperties != null && projectProperties.Length > 0) format.Append(" [{10} > ").Append(projectProperties).Append("]");
